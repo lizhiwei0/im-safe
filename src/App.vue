@@ -8,10 +8,10 @@
             <span>{{(index + 1) + '.' + item.title }}</span>
           </div>
           <div class="im-list-content" v-for="(list, idx) in item" :key="idx">
-            <div class="im-list-item" v-if="item.type === 'radio'">
+            <!-- <div class="im-list-item" v-if="item.type === 'radio'">
               <poppy-radio-group v-model="model[item.formId]" :options="list" />
               <poppy-validator :ref="item.formId" v-model="isValid[index]" :model="model[item.formId]" :rules="rules4" :immediate="immediate"></poppy-validator>
-            </div>
+            </div> -->
           </div>
         </div>
     </div>
